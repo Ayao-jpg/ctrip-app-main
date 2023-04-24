@@ -1,0 +1,70 @@
+{
+  "name": "ctrip-app-main",
+  "version": "0.0.1",
+  "private": true,
+  "type": "import",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "eslint:format": "eslint . --ext ts --ext tsx --ext js",
+    "prettier:format": "prettier --write .",
+    "prettier:check": "prettier --check \"**/*.{ts,tsx,json}\"",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.0.1",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "antd": "^5.4.2",
+    "axios": "^1.2.1",
+    "dayjs": "^1.11.7",
+    "next": "13.0.6",
+    "next-api-decorators": "^2.0.0",
+    "rc-picker": "^3.6.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swiper": "^9.2.4",
+    "tailwind-scrollbar": "2.0.1",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/plugin-proposal-decorators": "^7.20.7",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@next/bundle-analyzer": "^13.2.4",
+    "@types/react": "17.0.37",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "5.46.1",
+    "autoprefixer": "^10.4.13",
+    "babel-plugin-import": "1.13.3",
+    "babel-plugin-parameter-decorator": "^1.0.16",
+    "babel-plugin-transform-typescript-metadata": "^0.3.2",
+    "eslint": "8.29.0",
+    "eslint-config-next": "12.0.4",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import-helpers": "1.3.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-testing-library": "5.9.1",
+    "husky": "^8.0.2",
+    "lint-staged": "13.1.0",
+    "mockjs": "^1.1.0",
+    "next-compose-plugins": "2.2.1",
+    "next-images": "1.8.4",
+    "next-mock": "^0.0.5",
+    "next-plugin-antd-less": "1.8.0",
+    "next-transpile-modules": "10.0.0",
+    "postcss": "^8.4.20",
+    "postcss-plugins": "^1.13.1",
+    "postcss-px-to-viewport": "^1.1.1",
+    "prettier": "2.8.1"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "npm prettier:format",
+      "npm run eslint:format"
+    ]
+  }
+}
